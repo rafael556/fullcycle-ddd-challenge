@@ -1,5 +1,5 @@
+import RepositoryInterface from "../../../../domain/@shared/repository/repository.interface";
 import Product from "../../../../domain/product/entity/product";
-import RepositoryInterface from "../../domain/repository/repository.interface";
 import ProductModel from "./product.model";
 
 export default class ProductRepository implements RepositoryInterface<Product> {

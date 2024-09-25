@@ -9,25 +9,25 @@ describe('Address Class', () => {
 
     it('should throw an error if street is empty', () => {
         expect(() => {
-            new Address('', 123, '12345', 'Metropolis');
+            const address = new Address('', 123, '12345', 'Metropolis');
         }).toThrow('Street is required');
     });
 
     it('should throw an error if number is zero', () => {
         expect(() => {
-            new Address('Main St', 0, '12345', 'Metropolis');
+            const address = new Address('Main St', 0, '12345', 'Metropolis');
         }).toThrow('Number is required');
     });
 
     it('should throw an error if zip is empty', () => {
         expect(() => {
-            new Address('Main St', 123, '', 'Metropolis');
+            const address = new Address('Main St', 123, '', 'Metropolis');
         }).toThrow('Zip is required');
     });
 
     it('should throw an error if city is empty', () => {
         expect(() => {
-            new Address('Main St', 123, '12345', '');
+            const address = new Address('Main St', 123, '12345', '');
         }).toThrow('City is required');
     });
 });

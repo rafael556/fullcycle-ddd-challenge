@@ -43,4 +43,8 @@ export default class Address {
       throw new Error("City is required");
     }
   }
+
+  toString(): string {
+    return `${this.street}, ${this.number}, ${this.zipcode}, ${this.city}`;
+  }
 }
